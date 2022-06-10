@@ -22,6 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         cpanm -n --installdeps .
+        npm i -D webpack webpack-cli
     - name: Run build production test
       run: prove -vl
       env:
